@@ -7,6 +7,7 @@
     <meta name="apple-mobile-web-app-title" content="Zu's birthday">
     <title>Zu's birthday</title>
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
     <link href='styles.css' rel='stylesheet'>
     <script>
         window.console = window.console || function (t) { };
@@ -36,20 +37,30 @@
         <i class='bx bxs-rocket rocket-three'></i>
 
         <div class="day-description card">
-            <div class="bday-names-container bday-desc-letters-container">
-                <h1 class="bday-name-letter">CHÂU</h1>
-                <span class="divid"></span>
-                <h1 class="bday-name-letter">HOÀI</h1>
-                <span class="divid"></span>
-                <h1 class="bday-name-letter">DUNG</h1>
-            </div>
-            <div class="birthday-titles-container bday-desc-letters-container">
-                <h2 class="bday-desc-letter">BIRTHDAY</h2>
-            </div>
+			<div class="content-visible" style="text-align: center;">
+				<div class="bday-names-container bday-desc-letters-container">
+					<h1 class="bday-name-letter">CHÂU</h1>
+					<span class="divid"></span>
+					<h1 class="bday-name-letter">HOÀI</h1>
+					<span class="divid"></span>
+					<h1 class="bday-name-letter">DUNG</h1>
+				</div>
+				<div class="birthday-titles-container bday-desc-letters-container">
+					<h2 class="bday-desc-letter">BIRTHDAY</h2>
+				</div>
+			</div>
+			<div class="content-hidden">
+				<p style="font-family:'Dancing Script', cursive;">
+					Chúc mừng sinh nhật vợ yêu, chúc vợ yêu luôn luôn yêu đời, vui vẻ, hạnh phúc và luôn giữ nụ cười trên môi. Mọi điều may mắn và bình an sẽ đến với vợ yêu trong tuổi 28 này. Sau này con đường đi của vợ yêu sẽ có chồng rồi nè, chồng sẽ là chỗ dựa cho vợ yêu nè, vợ chồng mình cùng cố gắng trên con đường sau này nhengggg. 
+					<br /><br />
+					CHỒNG YÊU VỢ NHIỀU NHIỀU NHIỀUUUU...
+				</p>
+			</div>
+			<button id="see-more" type="button">Xem tiếp</button>
+			<lottie-player src="https://assets3.lottiefiles.com/packages/lf20_5hufvwkz.json" background="transparent" speed="1" class="lottie-firework" loop autoplay></lottie-player>
         </div>
     </div>
 
-    <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_5hufvwkz.json" background="transparent" speed="1" class="lottie-firework" loop autoplay></lottie-player>
     <img src="https://raw.githubusercontent.com/r-e-d-ant/mthierry-bday/887159adfedabd8d1c3b6cdf3ba20abb4d55197f/assets/images/mountain.svg" alt="mountain" class="mountain-wave">
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="howler.min.js"></script>
@@ -62,6 +73,18 @@
             volume: 0.5
         });
         sound.play();
+    </script>
+	<script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+	<script>
+		$("#see-more").click(function(){
+			$(".day-description.card").toggleClass("flip");
+			if($(".day-description.card").hasClass("flip")){
+				$(this).text("Trở về");
+			}
+			else{
+				$(this).text("Xem tiếp");
+			}
+		});
     </script>
 </body>
 
