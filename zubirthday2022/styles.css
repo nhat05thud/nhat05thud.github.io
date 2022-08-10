@@ -270,7 +270,7 @@ body {
 }
 
 .bday-name-letter {
-    font-size: 4vw;
+    font-size: 3.5vw;
     margin-right: 1.5rem;
 }
 
@@ -405,4 +405,8 @@ body {
 	.content-hidden {
 		font-size: 4.2vw;
 	}
+    .tuturi, .day-two {
+        width: 90px;
+        height: 90px;
+    }
 }
