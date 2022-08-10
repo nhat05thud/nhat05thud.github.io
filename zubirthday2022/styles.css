@@ -136,6 +136,7 @@ body {
     margin-top: 5rem;
     position: relative;
     font-family: "Reenie Beanie", cursive;
+	z-index: 999999;
 }
 
 .celeb {
@@ -240,10 +241,12 @@ body {
 @keyframes flipc {
     from {
         transform: rotateY(0);
+		z-index: 9999;
     }
 
     to {
         transform: rotateY(360deg);
+		z-index: 9999999;
     }
 }
 
